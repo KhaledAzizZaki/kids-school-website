@@ -38,6 +38,9 @@ body {
 .color4 {
   color: rgba(93, 88, 239, 1);
 }
+.color5 {
+  color: rgba(135, 0, 255, 1);
+}
 
 /* header style */
 /* navbar style */
@@ -112,6 +115,94 @@ body {
   width: 100%;
 }
 
+/* curriculum style */
+.curriculum {
+  background-image: url(assets/bg.png);
+  text-align: center;
+  background-size: contain;
+}
+.curriculum-title {
+  font-size: 4.6rem;
+  font-weight: 700;
+  color: rgba(17, 17, 17, 1);
+  padding: 60px 0 80px;
+}
+.curriculum-all-card {
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 28px;
+}
+.curriculum-card {
+  padding: 52px 40px;
+  max-width: 367px;
+  border-radius: 18px;
+}
+.curriculum-card-1 {
+  border: 0.9px solid rgba(222, 245, 255, 1);
+  box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+  background: linear-gradient(
+    180deg,
+    rgb(222, 245, 255),
+    rgba(255, 255, 255, 0) 40%
+  );
+  background-color: white;
+}
+.curriculum-card-2 {
+  border: 0.9px solid rgba(255, 244, 220, 1);
+  box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 244, 220, 1),
+    rgba(255, 255, 255, 0) 40%
+  );
+  background-color: white;
+}
+.curriculum-card-3 {
+  border: 0.9px solid rgba(242, 232, 255, 1);
+  box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+  background: linear-gradient(
+    180deg,
+    rgba(238, 225, 255, 1),
+    rgba(255, 255, 255, 0) 40%
+  );
+  background-color: white;
+}
+.curriculum-card h5 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: rgba(32, 32, 32, 1);
+  padding: 32px 0;
+}
+.curriculum-card p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: rgba(128, 128, 128, 1);
+  padding-bottom: 3.2rem;
+  max-width: 286px;
+  line-height: 2.8rem;
+}
+.curriculum-card a {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+.next {
+  justify-content: center;
+  gap: 10px;
+  margin: 80px 0 60px;
+}
+.next div {
+  width: 60px;
+  height: 60px;
+  background-color: rgba(254, 163, 1, 1);
+  font-size: 16px;
+  color: rgba(255, 255, 255, 1);
+  border-radius: 50%;
+}
+.next div i {
+  padding: 20px 0 17px;
+}
+
 /* Media style */
 @media (max-width: 576px) {
   :root {
@@ -119,7 +210,8 @@ body {
   }
   .brand h5,
   .navbar ul,
-  .navbar button {
+  .navbar button,
+  .next {
     display: none;
   }
   .navbar {
@@ -141,5 +233,11 @@ body {
   }
   .hero-desc p {
     padding: 18px 0;
+  }
+  .curriculum-title {
+    padding: 40px 20px;
+  }
+  .curriculum-all-card {
+    gap: 12px;
   }
 }
