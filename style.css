@@ -297,6 +297,54 @@ body {
 .our-stories-button {
   text-align: center;
 }
+footer {
+  background-color: rgba(1, 172, 253, 1);
+  max-width: 1440px;
+  /* max-height: 520px; */
+}
+.footer {
+  justify-content: space-between;
+  padding: 10rem 4rem;
+  flex-wrap: wrap;
+}
+.footer-description {
+  max-width: 399px;
+  flex-wrap: wrap;
+}
+.footer-description img {
+  width: 83px;
+}
+.footer-description h5 {
+  font-size: 42px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 1);
+  line-height: 39px;
+}
+.footer-description p {
+  font-size: 20px;
+  color: rgba(255, 255, 255, 1);
+  padding: 3.5rem 0;
+}
+.footer-menu li {
+  list-style: none;
+  padding-bottom: 2rem;
+}
+.footer-menu a {
+  text-decoration: none;
+  font-size: 2rem;
+  color: rgba(255, 255, 255, 1);
+  padding-bottom: 2rem;
+}
+.about-school {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+.keep-in-touch h6 {
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 1);
+  padding-bottom: 32px;
+}
 
 /* Media style */
 @media (max-width: 992px) and (min-width: 576px) {
@@ -336,20 +384,6 @@ body {
   .curriculum-all-card {
     gap: 12px;
   }
-  /* .our-stories-small-all-cards {
-    grid-template-columns: repeat(2, 173px);
-    grid-template-rows: repeat(2, 180px);
-    gap: 11px;
-  }
-  .small-card-desc {
-    margin: -15px;
-  }
-  .our-stories-all-card {
-    margin-bottom: 2rem;
-  }
-  .our-stories {
-    background-size: cover;
-  } */
 }
 
 @media (max-width: 576px) {
@@ -402,5 +436,21 @@ body {
   }
   .our-stories {
     background-size: cover;
+  }
+  .footer {
+    flex-direction: column;
+  }
+  .footer-description p {
+    font-size: 16px;
+    margin-bottom: 32px;
+  }
+  .footer-menu a {
+    font-size: 17px;
+  }
+  .footer-menu {
+    margin-bottom: 32px;
+  }
+  .keep-in-touch h6 {
+    font-size: 22px;
   }
 }
